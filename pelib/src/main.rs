@@ -51,6 +51,7 @@ pub fn FillStructureFromMemory<T>(dest: &mut T,src: *const c_void,prochandle: *m
         return byteswritten;
     }
 }
+// edit because updating soon the code
 
 
 pub fn GetHeadersSize(buffer:&Vec<u8>) -> usize{
