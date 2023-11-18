@@ -66,6 +66,8 @@ pub unsafe extern "C"  fn messageboxclone(hwnd:*mut HWND__,
         originaladdress.to_ne_bytes().as_ptr() as *const c_void,
          originaladdress.to_ne_bytes().len(), std::ptr::null_mut());
                 */
+                
+                
             
         let temp = ReadStringFromMemory(GetCurrentProcess(), lptext as *const c_void);
         println!("lp text: {}",
